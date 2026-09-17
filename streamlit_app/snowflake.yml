@@ -1,0 +1,14 @@
+definition_version: 2
+entities:
+  supply_chain_dashboard:
+    type: streamlit
+    identifier:
+      name: SUPPLY_CHAIN_DASHBOARD
+      database: SUPPLY_CHAIN_ONTOLOGY
+      schema: CORE
+    query_warehouse: COMPUTE_WH
+    runtime_name: SYSTEM$ST_CONTAINER_RUNTIME_PY3_11
+    compute_pool: SYSTEM_COMPUTE_POOL_CPU
+    main_file: streamlit_app.py
+    artifacts:
+      - streamlit_app.py
